@@ -1,9 +1,9 @@
 import streamlit as st
 import pickle
 
-dt_model=pickle.load(open('dt_model.pkl','rb'))
-knn_model=pickle.load(open('knn_model.pkl','rb'))
-log_model=pickle.load(open('log_model.pkl','rb'))
+dt_model=pickle.load(open('dt_model.sav','rb'))
+knn_model=pickle.load(open('knn_model.sav','rb'))
+log_model=pickle.load(open('log_model.sav','rb'))
 
 def price(num):
     if num==0.0:
